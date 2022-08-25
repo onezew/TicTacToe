@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TicTacToe
@@ -29,7 +22,7 @@ namespace TicTacToe
                 bunifuSnackbar1.Show(this, "At least one player's name isn't introduced.", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.BottomRight);
                 return;
             }
-            new Game(bunifuTextBox1.Text, bunifuTextBox2.Text).Show();
+            new Game(bunifuTextBox1.Text, bunifuTextBox2.Text, 0, 0).Show();
             Hide();
         }
     }
