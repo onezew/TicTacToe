@@ -22,7 +22,7 @@ namespace TicTacToe
                 bunifuSnackbar1.Show(this, "At least one player's name isn't introduced.", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 3000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.BottomRight);
                 return;
             }
-            new Game(bunifuTextBox1.Text, bunifuTextBox2.Text, 0, 0).Show();
+            new Game(bunifuTextBox1.Text, bunifuTextBox2.Text, 0, 0, true).Show();
             Hide();
         }
     }
