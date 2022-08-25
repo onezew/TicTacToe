@@ -68,7 +68,8 @@ namespace TicTacToe
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new MainActivity().Show();
+            this.Close();
         }
 
         public void checkGameDone()
